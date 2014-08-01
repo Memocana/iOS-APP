@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.11" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="40o-5s-pdb">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6190.4"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="Jok-Lb-ff3">
+            <objects>
+                <viewController id="H7d-cO-v2V" customClass="HomeViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7yO-Og-cVD"/>
+                        <viewControllerLayoutGuide type="bottom" id="oz8-Xa-pr0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4d4-nx-qeo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hW-8J-Vz0">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.80642832880000004" green="0.31200267729999998" blue="0.27304464699999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.077933933420000004" green="0.077933933420000004" blue="0.077933933420000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Kartivizit Ekle">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="194" width="280" height="57"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="DZ9-A8-QvW" kind="show" identifier="ekleSegue" id="DVq-0w-eFe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ub-Ej-iK3">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.36687352340000001" green="0.62018624030000002" blue="0.80642832880000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.077933933420000004" green="0.077933933420000004" blue="0.077933933420000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Kartvizitlere Bak">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="268" width="280" height="57"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="2hu-Du-vPk" kind="show" identifier="bakSegue" id="VVe-Ly-bnc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hosgeldiniz, " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mm1-o0-GxZ">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="151" width="280" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p6s-61-EPw">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.89051885190217395" green="0.74244059723743105" blue="0.00088267682662323502" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.077933933420000004" green="0.077933933420000004" blue="0.077933933420000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Kartvizitim">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="341" width="280" height="57"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="kp5-LS-Y79" kind="show" identifier="benSegue" id="ekL-xm-mVJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caB-mt-3b9">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.60189373470836238" green="0.89051885190000002" blue="0.18998227006533414" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.077933933420000004" green="0.077933933420000004" blue="0.077933933420000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Bağlantılarım">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="416" width="280" height="57"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="PlX-zL-SmU" kind="show" identifier="baglantiSegue" id="bys-aT-LyK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="8hW-8J-Vz0"/>
+                                <exclude reference="3Ub-Ej-iK3"/>
+                                <exclude reference="mm1-o0-GxZ"/>
+                                <exclude reference="p6s-61-EPw"/>
+                                <exclude reference="caB-mt-3b9"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="8hW-8J-Vz0"/>
+                                <include reference="3Ub-Ej-iK3"/>
+                                <include reference="mm1-o0-GxZ"/>
+                                <include reference="p6s-61-EPw"/>
+                                <include reference="caB-mt-3b9"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="6iV-U9-3wz"/>
+                    <connections>
+                        <outlet property="karsilama" destination="mm1-o0-GxZ" id="ujs-WW-2dd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U4e-1Z-Tpr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-103.5" y="255.75"/>
+        </scene>
+        <!--Ekle-->
+        <scene sceneID="XNd-D7-O5X">
+            <objects>
+                <viewController id="DZ9-A8-QvW" customClass="ViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qhe-to-36m"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pq1-oe-1rT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PxO-wt-m4W">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWJ-YV-L8M">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="516" width="42" height="21"/>
+                                </variation>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sCT-DG-5qx">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="qbF-A0-6My">
+                                        <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="147" y="42" width="149" height="30"/>
+                                        </variation>
+                                        <connections>
+                                            <outlet property="delegate" destination="DZ9-A8-QvW" id="7Jl-EK-spo"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adı:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gf9-0S-RSK">
+                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="254" y="13" width="30" height="21"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sirket:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xL-3N-HhW">
+                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="6" y="157" width="49" height="21"/>
+                                        </variation>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="9Nd-qy-iMn">
+                                        <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="147" y="109" width="149" height="30"/>
+                                        </variation>
+                                        <connections>
+                                            <outlet property="delegate" destination="DZ9-A8-QvW" id="9bg-qP-JZu"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mail:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8py-kS-13W">
+                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="6" y="190" width="37" height="21"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Benim:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cv-pQ-6uh">
+                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="6" y="230" width="54" height="21"/>
+                                        </variation>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="EEA-Ud-Eg1">
+                                        <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="108" y="148" width="188" height="30"/>
+                                        </variation>
+                                        <connections>
+                                            <outlet property="delegate" destination="DZ9-A8-QvW" id="o4h-dX-BfI"/>
+                                        </connections>
+                                    </textField>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BfV-Yd-u0V">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="6" y="6" width="133" height="133"/>
+                                        </variation>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soyadi:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qe-Ad-H4l">
+                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="226" y="80" width="58" height="21"/>
+                                        </variation>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WTC-ON-sxz">
+                                        <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="247" y="225" width="51" height="31"/>
+                                        </variation>
+                                    </switch>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vv-If-TgN">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <state key="normal" title="Resim Seç">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="139" height="139"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="resimSecmeAcilsin:" destination="DZ9-A8-QvW" eventType="touchDown" id="DCs-JE-6aQ"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="i0h-ns-uUP">
+                                        <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="108" y="186" width="188" height="30"/>
+                                        </variation>
+                                        <connections>
+                                            <outlet property="delegate" destination="DZ9-A8-QvW" id="vgH-o4-8t8"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="qbF-A0-6My"/>
+                                        <exclude reference="gf9-0S-RSK"/>
+                                        <exclude reference="3xL-3N-HhW"/>
+                                        <exclude reference="9Nd-qy-iMn"/>
+                                        <exclude reference="8py-kS-13W"/>
+                                        <exclude reference="3cv-pQ-6uh"/>
+                                        <exclude reference="EEA-Ud-Eg1"/>
+                                        <exclude reference="BfV-Yd-u0V"/>
+                                        <exclude reference="4qe-Ad-H4l"/>
+                                        <exclude reference="WTC-ON-sxz"/>
+                                        <exclude reference="3vv-If-TgN"/>
+                                        <exclude reference="i0h-ns-uUP"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="8" y="126" width="304" height="308"/>
+                                    <mask key="subviews">
+                                        <include reference="qbF-A0-6My"/>
+                                        <include reference="gf9-0S-RSK"/>
+                                        <include reference="3xL-3N-HhW"/>
+                                        <include reference="9Nd-qy-iMn"/>
+                                        <include reference="8py-kS-13W"/>
+                                        <include reference="3cv-pQ-6uh"/>
+                                        <include reference="EEA-Ud-Eg1"/>
+                                        <include reference="BfV-Yd-u0V"/>
+                                        <include reference="4qe-Ad-H4l"/>
+                                        <include reference="WTC-ON-sxz"/>
+                                        <include reference="3vv-If-TgN"/>
+                                        <include reference="i0h-ns-uUP"/>
+                                    </mask>
+                                </variation>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MpA-Lj-HM5">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Ekle">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="145" y="442" width="30" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="tamamTiklandi:" destination="DZ9-A8-QvW" eventType="touchDown" id="s3E-fL-10X"/>
+                                    <segue destination="kp5-LS-Y79" kind="show" identifier="tamamSegue" id="JN4-EY-Wgv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="RWJ-YV-L8M"/>
+                                <exclude reference="sCT-DG-5qx"/>
+                                <exclude reference="MpA-Lj-HM5"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="RWJ-YV-L8M"/>
+                                <include reference="sCT-DG-5qx"/>
+                                <include reference="MpA-Lj-HM5"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Ekle" id="qj7-TC-rAh"/>
+                    <connections>
+                        <outlet property="Tamam" destination="MpA-Lj-HM5" id="bCO-bf-tvE"/>
+                        <outlet property="adiGirin" destination="qbF-A0-6My" id="KIq-eE-p29"/>
+                        <outlet property="benimBilgilerimSwitch" destination="WTC-ON-sxz" id="bSE-fR-HlJ"/>
+                        <outlet property="hata" destination="RWJ-YV-L8M" id="VsC-Lt-Idc"/>
+                        <outlet property="mailGirin" destination="i0h-ns-uUP" id="9zA-Yz-LAa"/>
+                        <outlet property="resimGirin" destination="3vv-If-TgN" id="E72-X2-tim"/>
+                        <outlet property="resimPreview" destination="BfV-Yd-u0V" id="UPr-UZ-rNi"/>
+                        <outlet property="sirketGirin" destination="EEA-Ud-Eg1" id="2ud-3w-WXr"/>
+                        <outlet property="soyadiGirin" destination="9Nd-qy-iMn" id="IBV-nc-rjU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZlA-L8-sfW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="700.5" y="-111.75"/>
+        </scene>
+        <!--Kartvizitim-->
+        <scene sceneID="bSE-Nd-xhy">
+            <objects>
+                <viewController id="kp5-LS-Y79" customClass="TextViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="en5-Gx-yci"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hxg-YR-5Xx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dUb-lo-ZSY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ms9-CH-zya">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="169" y="219" width="192" height="28"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56B-2V-Nvk">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="268" width="280" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soyadı:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BsW-vA-2ri">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="169" y="190" width="192" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qrx-lh-LiO">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="320" width="280" height="21"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q2e-HM-vyA">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="361" width="280" height="30"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="kp5-LS-Y79" id="kYL-Ze-EOJ"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GuO-Au-GoK">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Bul">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="406" width="30" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="aramaYap:" destination="kp5-LS-Y79" eventType="touchDown" id="rsi-Cy-dB2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qoc-uC-AIa">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Sil">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="270" y="406" width="30" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="silmeYap:" destination="kp5-LS-Y79" eventType="touchDown" id="W3a-6n-qBs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ky-UP-CKh">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="408" width="280" height="21"/>
+                                </variation>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Mesaj!" translatesAutoresizingMaskIntoConstraints="NO" id="PNb-VN-TLQ">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="482" width="280" height="111"/>
+                                </variation>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ive-q9-JVQ">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Paylaş">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="444" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="paylasBasildi:" destination="kp5-LS-Y79" eventType="touchDown" id="jEz-Rn-e3P"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bYF-Z0-mnw">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="114" width="133" height="133"/>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cq6-bR-6aG">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="169" y="153" width="192" height="29"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adı:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="za5-E7-XRq">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="169" y="124" width="192" height="21"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ms9-CH-zya"/>
+                                <exclude reference="56B-2V-Nvk"/>
+                                <exclude reference="BsW-vA-2ri"/>
+                                <exclude reference="Qrx-lh-LiO"/>
+                                <exclude reference="q2e-HM-vyA"/>
+                                <exclude reference="GuO-Au-GoK"/>
+                                <exclude reference="qoc-uC-AIa"/>
+                                <exclude reference="0Ky-UP-CKh"/>
+                                <exclude reference="PNb-VN-TLQ"/>
+                                <exclude reference="ive-q9-JVQ"/>
+                                <exclude reference="bYF-Z0-mnw"/>
+                                <exclude reference="cq6-bR-6aG"/>
+                                <exclude reference="za5-E7-XRq"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="ms9-CH-zya"/>
+                                <include reference="56B-2V-Nvk"/>
+                                <include reference="BsW-vA-2ri"/>
+                                <include reference="Qrx-lh-LiO"/>
+                                <include reference="q2e-HM-vyA"/>
+                                <include reference="GuO-Au-GoK"/>
+                                <include reference="qoc-uC-AIa"/>
+                                <include reference="0Ky-UP-CKh"/>
+                                <include reference="PNb-VN-TLQ"/>
+                                <include reference="ive-q9-JVQ"/>
+                                <include reference="bYF-Z0-mnw"/>
+                                <include reference="cq6-bR-6aG"/>
+                                <include reference="za5-E7-XRq"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Kartvizitim" id="KDl-Oc-hC2">
+                        <barButtonItem key="leftBarButtonItem" title="Tümü" id="SXQ-50-syP">
+                            <connections>
+                                <segue destination="2hu-Du-vPk" kind="show" identifier="tumuSeque" id="jXL-mm-H3f"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Düzenle" id="reI-yR-zKE">
+                            <connections>
+                                <segue destination="DZ9-A8-QvW" kind="show" identifier="duzenleSeque" id="krc-2e-4KI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="Adi" destination="cq6-bR-6aG" id="5AJ-Q1-s6y"/>
+                        <outlet property="AramaSonucu" destination="0Ky-UP-CKh" id="tDV-F7-xoV"/>
+                        <outlet property="Bul" destination="GuO-Au-GoK" id="Jyb-CO-cWJ"/>
+                        <outlet property="Maili" destination="Qrx-lh-LiO" id="twV-L2-hz8"/>
+                        <outlet property="SearchBar" destination="q2e-HM-vyA" id="wMd-cd-6Rx"/>
+                        <outlet property="Sil" destination="qoc-uC-AIa" id="VrN-56-pB2"/>
+                        <outlet property="Sirketi" destination="56B-2V-Nvk" id="lFO-g4-B7e"/>
+                        <outlet property="Soyadi" destination="ms9-CH-zya" id="Se6-8Z-0qv"/>
+                        <outlet property="resimPreview" destination="bYF-Z0-mnw" id="3hR-wD-xz9"/>
+                        <outlet property="tvChat" destination="PNb-VN-TLQ" id="Q1a-7W-5sF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Pk-ba-PL2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1651.5" y="255.75"/>
+        </scene>
+        <!--Baglanti View Controller-->
+        <scene sceneID="wJu-wy-nek">
+            <objects>
+                <viewController id="PlX-zL-SmU" customClass="BaglantiViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ha2-5F-V7H"/>
+                        <viewControllerLayoutGuide type="bottom" id="CYn-jx-KAw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NbJ-FW-bjQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visible To Others?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aah-l5-RaZ">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="99" width="138" height="21"/>
+                                </variation>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wgm-KN-Sc1">
+                                <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="251" y="94" width="51" height="31"/>
+                                </variation>
+                                <connections>
+                                    <action selector="toggleVisibility:" destination="PlX-zL-SmU" eventType="valueChanged" id="wQ5-zH-OnP"/>
+                                </connections>
+                            </switch>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="79v-Q2-mcm">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="146" width="320" height="327"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="PlX-zL-SmU" id="z0R-nS-mz7"/>
+                                    <outlet property="delegate" destination="PlX-zL-SmU" id="6dq-67-jN2"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y8j-dZ-LaF">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Disconnect">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="121" y="492" width="78" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="disconnect:" destination="PlX-zL-SmU" eventType="touchDown" id="j3U-sU-hRP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="aah-l5-RaZ"/>
+                                <exclude reference="wgm-KN-Sc1"/>
+                                <exclude reference="79v-Q2-mcm"/>
+                                <exclude reference="Y8j-dZ-LaF"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="aah-l5-RaZ"/>
+                                <include reference="wgm-KN-Sc1"/>
+                                <include reference="79v-Q2-mcm"/>
+                                <include reference="Y8j-dZ-LaF"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="btnDisconnect" destination="Y8j-dZ-LaF" id="kwg-qZ-2Q2"/>
+                        <outlet property="swVisible" destination="wgm-KN-Sc1" id="l3Q-1H-WKI"/>
+                        <outlet property="tblConnectedDevices" destination="79v-Q2-mcm" id="edz-Vg-chP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BXn-NL-sof" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-105" y="993.75"/>
+        </scene>
+        <!--Kartvizitlerim-->
+        <scene sceneID="Tug-54-Set">
+            <objects>
+                <tableViewController id="2hu-Du-vPk" customClass="KartvizitViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="h4L-Sj-JnU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" text="" id="KWN-F0-shg">
+                            <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="2hu-Du-vPk" id="GhZ-9N-CVl"/>
+                            </connections>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="test" id="aqu-fa-3HG">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aqu-fa-3HG" id="dCZ-Re-F87">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="kp5-LS-Y79" kind="show" identifier="tableViewSegue" id="KJM-eL-tX9"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="2hu-Du-vPk" id="BCI-gh-zx9"/>
+                            <outlet property="delegate" destination="2hu-Du-vPk" id="2qD-HE-PPD"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems>
+                        <barButtonItem title="Home" id="uwP-aC-kyK">
+                            <connections>
+                                <segue destination="H7d-cO-v2V" kind="show" identifier="homeSegue" id="QGR-RH-rMD"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Kartvizitlerim" id="9RF-sD-3IL">
+                        <connections>
+                            <outlet property="leftBarButtonItem" destination="uwP-aC-kyK" id="Gs3-0H-uql"/>
+                        </connections>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="searchBar" destination="KWN-F0-shg" id="rxc-X4-g8t"/>
+                        <outlet property="searchDisplayController" destination="5cN-Ah-h4i" id="Qpk-c4-9HG"/>
+                        <outlet property="tableView" destination="h4L-Sj-JnU" id="Hmp-IO-YMg"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qLQ-Kg-1a1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="5cN-Ah-h4i">
+                    <connections>
+                        <outlet property="delegate" destination="2hu-Du-vPk" id="XGA-vy-yDP"/>
+                        <outlet property="searchBar" destination="KWN-F0-shg" id="n4S-JO-0pN"/>
+                        <outlet property="searchContentsController" destination="2hu-Du-vPk" id="OfP-yE-LlO"/>
+                        <outlet property="searchResultsDataSource" destination="2hu-Du-vPk" id="2aO-0h-Zpf"/>
+                        <outlet property="searchResultsDelegate" destination="2hu-Du-vPk" id="r7b-65-o01"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="700.5" y="595.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="00J-eV-6nv">
+            <objects>
+                <navigationController id="40o-5s-pdb" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bD6-x4-UGg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="H7d-cO-v2V" kind="relationship" relationship="rootViewController" id="bkg-AU-qzH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sls-nu-x4V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-826.5" y="255.75"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="jXL-mm-H3f"/>
+        <segue reference="JN4-EY-Wgv"/>
+        <segue reference="krc-2e-4KI"/>
+        <segue reference="QGR-RH-rMD"/>
+    </inferredMetricsTieBreakers>
+</document>
