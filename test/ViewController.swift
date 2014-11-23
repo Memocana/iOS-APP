@@ -146,11 +146,11 @@ class ViewController: UIViewController, UITextFieldDelegate, UIActionSheetDelega
         return true
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!){
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!){
         if(segue.identifier=="tamamSegue"){
             (segue.destinationViewController as TextViewController).personInfo = testArray
             print(self.resimPreview.image)
-            (segue.destinationViewController as TextViewController).tempImageStorage = self.resimPreview.image
+            (segue  .destinationViewController as TextViewController).tempImageStorage = self.resimPreview.image
             coreDataManager.save(testArray, picture: picture)
             if (benimBilgilerimSwitch.on) {
                 for var i = 0; i < 4; i++ {

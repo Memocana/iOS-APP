@@ -58,7 +58,7 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
         return true
         
     }
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if (segue.identifier == "benSegue") {
             var benimKartim: [String] = []
             for i in keys {

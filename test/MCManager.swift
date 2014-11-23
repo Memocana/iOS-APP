@@ -23,7 +23,7 @@ class MCManager: NSObject, MCSessionDelegate, MCNearbyServiceBrowserDelegate, MC
     
     var peers: [MCPeerID] = []
     
-    init() {
+    override init() {
         peerID = nil
         session = nil
         browser = nil

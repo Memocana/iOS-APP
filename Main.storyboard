@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.11" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="40o-5s-pdb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="40o-5s-pdb">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6190.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
         <!--Home-->
@@ -207,7 +207,7 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BfV-Yd-u0V">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                         <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="6" y="6" width="133" height="133"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                         </variation>
                                     </imageView>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soyadi:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qe-Ad-H4l">
@@ -428,7 +428,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="482" width="280" height="111"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                 </variation>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ive-q9-JVQ">
@@ -446,7 +446,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bYF-Z0-mnw">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="114" width="133" height="133"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                 </variation>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cq6-bR-6aG">
@@ -567,7 +567,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="146" width="320" height="327"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                 </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="PlX-zL-SmU" id="z0R-nS-mz7"/>
@@ -663,7 +663,6 @@
                     <connections>
                         <outlet property="searchBar" destination="KWN-F0-shg" id="rxc-X4-g8t"/>
                         <outlet property="searchDisplayController" destination="5cN-Ah-h4i" id="Qpk-c4-9HG"/>
-                        <outlet property="tableView" destination="h4L-Sj-JnU" id="Hmp-IO-YMg"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qLQ-Kg-1a1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -677,7 +676,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="700.5" y="595.5"/>
+            <point key="canvasLocation" x="700.5" y="693"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="00J-eV-6nv">
@@ -697,9 +696,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="jXL-mm-H3f"/>
         <segue reference="JN4-EY-Wgv"/>
         <segue reference="krc-2e-4KI"/>
-        <segue reference="QGR-RH-rMD"/>
+        <segue reference="bkg-AU-qzH"/>
+        <segue reference="VVe-Ly-bnc"/>
     </inferredMetricsTieBreakers>
 </document>

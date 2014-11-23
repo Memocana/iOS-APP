@@ -19,7 +19,7 @@ class CoreDataHandler: NSObject {
         entry.setValue(array[3], forKey: "mail")
         entry.setValue(picture, forKey: "image")
         var error:NSErrorPointer?
-        if(error){
+        if((error) != nil){
             managedObjectContext.save(error!)
         }
         self.saveContext()
@@ -32,7 +32,7 @@ class CoreDataHandler: NSObject {
         fetchRequest.returnsObjectsAsFaults=false
         var error:NSError?
         var data:NSArray=[]
-        data = managedObjectContext.executeFetchRequest(fetchRequest, error: &error)
+        data = managedObjectContext.executeFetchRequest(fetchRequest, error: &error)!
         return data
     }
     func getData() -> NSArray {
@@ -41,7 +41,7 @@ class CoreDataHandler: NSObject {
         fetchRequest.returnsObjectsAsFaults=false
         var error:NSError?
         var data:NSArray=[]
-        data = managedObjectContext.executeFetchRequest(fetchRequest, error: &error)
+        data = managedObjectContext.executeFetchRequest(fetchRequest, error: &error)!
         return data
     }
     
@@ -58,9 +58,9 @@ class CoreDataHandler: NSObject {
     
     func saveContext () {
         var error: NSError? = nil
-        let managedObjectContext = self.managedObjectContext
+        let managedObjectContext: NSManagedObjectContext? = self.managedObjectContext
         if managedObjectContext != nil {
-            if managedObjectContext.hasChanges && !managedObjectContext.save(&error) {
+            if managedObjectContext!.hasChanges && !managedObjectContext!.save(&error) {
                 // Replace this implementation with code to handle the error appropriately.
                 // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
                 //println("Unresolved error \(error), \(error.userInfo)")

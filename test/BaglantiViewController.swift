@@ -12,7 +12,7 @@ import MultipeerConnectivity
 var arrConnectedDevices: NSMutableArray = []
 
 
-class BaglantiViewController: UIViewController, MCBrowserViewControllerDelegate, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate
+class BaglantiViewController: UIViewController, MCBrowserViewControllerDelegate, UITableViewDelegate, UITextFieldDelegate
 {
     @IBOutlet var swVisible: UISwitch!
     @IBOutlet var tblConnectedDevices: UITableView!
@@ -48,7 +48,7 @@ class BaglantiViewController: UIViewController, MCBrowserViewControllerDelegate,
             cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "CellIdentifier")
         }
         
-        cell!.textLabel.text = arrConnectedDevices[indexPath.row] as String
+        cell!.textLabel.text = arrConnectedDevices[indexPath.row] as? String
         
         return cell!
     }
